@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="welecome">Hi, Welcome back ?</string>
+    <string name="text_button_n_1">8</string>
+    <string name="text_button_n_2">14</string>
+    <string name="text_button_n_3">2</string>
+    <string name="Name">Chiheb</string>
+</resources>
