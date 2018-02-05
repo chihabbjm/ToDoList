@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:id="@+id/bg_slider"
-        android:layout_width="wrap_content"
+        android:layout_width="284dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@drawable/bg_text_slider"
@@ -18,29 +18,27 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
+        app:layout_constraintVertical_bias="0.009">
 
 
         <TextView
             android:id="@+id/textSlider_delegate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Delegate "
             android:layout_gravity="center"
-            android:singleLine="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
             android:maxLines="1"
             android:scrollHorizontally="true"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/delegate"
             android:textColor="#1856AE"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="134dp"
             tools:layout_editor_absoluteY="5dp" />
-
 
 
     </LinearLayout>
@@ -53,23 +51,52 @@
         android:background="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bg_slider"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.297"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.00999999" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <Button
         android:id="@+id/add_delegate"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toEndOf="@+id/bg_slider"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.00999999" />
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_delegate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#6c414aac"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_delegate"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="3dp"
+            android:background="@drawable/dialog_text_flied"
+            android:hint="@string/note"
+            android:inputType="text"
+            android:textColorHint="#ffffff"
+            android:textColorLink="@color/common_google_signin_btn_text_dark_default" />
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
